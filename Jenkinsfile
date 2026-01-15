@@ -28,10 +28,10 @@ pipeline {
             }
         }
 
-        stage('Deploy to K8s') {
-            steps {
-                sh 'ssh vm2 kubectl set image deployment/myapp myapp=$REGISTRY/$IMAGE'
-            }
-        }
+        //stage('Deploy to K8s') {
+        //    steps {
+        //        sh 'ssh vm2 kubectl set image deployment/myapp myapp=$REGISTRY/$IMAGE'
+        //    }
+        //}
     }
 }
