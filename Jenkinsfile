@@ -12,7 +12,7 @@ pipeline {
 				// GitHub에서 소스코드 clone
                 git branch: 'main',
                     url: 'git@github.com:xxx0209/myapp-repo.git',
-                    credentialsId: 'github-ssh-key'  // 여기에 Jenkins Credential ID
+                    credentialsId: 'github-ssh'  // 여기에 Jenkins Credential ID
             }
         }
 
